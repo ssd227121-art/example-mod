@@ -41,7 +41,7 @@ class $modify(BufferLayer, GJBaseGameLayer) {
         }
 
         bool enSuelo = m_player1->m_isOnGround;
-        bool enOrbe = !m_player1->m_touchingRings.empty();
+        bool enOrbe = m_player1->m_touchingRings && m_player1->m_touchingRings->count() > 0;
 
         if (enSuelo || enOrbe) {
             m_player1->pushButton(PlayerButton::Jump);
