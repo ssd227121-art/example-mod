@@ -1,17 +1,29 @@
 {
-	"geode": "$GEODE_VERSION",
+	"geode": "1.8.0",
 	"gd": {
 		"win": "2.2081",
 		"android": "2.2081",
 		"mac": "2.2081",
 		"ios": "2.2081"
 	},
-	"id": "$MOD_ID",
-	"name": "$MOD_NAME",
-	"version": "$MOD_VERSION",
-	"developer": "$MOD_DEVELOPER",
-	"description": "$MOD_DESCRIPTION",
-	"dependencies": {
-		"geode.node-ids": ">=v1.23.3"
+	"id": "ssd227121-art.buffersalto",
+	"name": "Buffer de Salto",
+	"version": "v1.0.0",
+	"developer": "ssd227121-art",
+	"description": "Guarda tus clics adelantados y salta cuando toca, en suelo y orbes.",
+	"settings": {
+		"activo": {
+			"type": "bool",
+			"name": "Activar buffer",
+			"default": true
+		},
+		"ventana": {
+			"type": "int",
+			"name": "Ventana (ms)",
+			"description": "Cuánto antes puedes dar el clic y que cuente.",
+			"default": 200,
+			"min": 10,
+			"max": 500
+		}
 	}
 }
